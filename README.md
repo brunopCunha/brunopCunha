@@ -1,4 +1,4 @@
-  <summary><h2>🛠️ My Favorite Tools</h2></summary>
+<h2>🛠️ Favorite Tools</h2>
   <!-- Some badges are from https://github.com/simple-icons/simple-icons-website -->
 
   <h3>👨‍💻 Programming and Markup Languages</h3>
@@ -63,7 +63,7 @@
       <a href="#"><img alt="Visual Studio Code" src="https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?logo=visual-studio&logoColor=white"></a>
   </p>
 
-  <summary><h2>📊 Stats and Activity</h2></summary>
+  <h2>📊 Stats and Activity</h2>
 
   <h3>🔥 Streak Stats</h3>
 
