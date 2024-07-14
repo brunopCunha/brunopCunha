@@ -1,116 +1,94 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>My page</title>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <script
-                src="https://unpkg.com/react@latest/umd/react.development.js"
-                crossorigin="anonymous"
-        ></script>
-        <script src="https://unpkg.com/react-dom@latest/umd/react-dom.development.js"></script>
-        <script
-                src="https://unpkg.com/@mui/material@latest/umd/material-ui.development.js"
-                crossorigin="anonymous"
-        ></script>
-        <script
-                src="https://unpkg.com/@babel/standalone@latest/babel.min.js"
-                crossorigin="anonymous"
-        ></script>
-        <!-- Fonts to support Material Design -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-                rel="stylesheet"
-                href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-        />
-        <!-- Icons to support Material Design -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    </head>
-    <body>
-        <div id="root"></div>
-        <script type="text/babel">
-            const {
-                colors,
-                CssBaseline,
-                ThemeProvider,
-                Typography,
-                Container,
-                createTheme,
-                Box,
-                SvgIcon,
-                Link,
-            } = MaterialUI;
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
 
-            // Create a theme instance.
-            const theme = createTheme({
-                palette: {
-                    primary: {
-                        main: '#556cd6',
-                    },
-                    secondary: {
-                        main: '#19857b',
-                    },
-                    error: {
-                        main: colors.red.A400,
-                    },
-                },
-            });
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
 
-            function LightBulbIcon(props) {
-                return (
-                    <SvgIcon {...props}>
-                        <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z" />
-                    </SvgIcon>
-                );
-            }
+<body id="page-top">
+    <header class="d-flex masthead" style="background-image:url('assets/img/bg-masthead.jpg');">
+        <div class="container my-auto text-center">
+            <h1 class="mb-1">Stylish Portfoliо</h1>
+            <h3 class="mb-5"><em>A Free Bootstrap Theme</em></h3><a class="btn btn-primary btn-xl" role="button" href="#about">Find Out More</a>
+        </div>
+    </header>
+    <section id="about" class="content-section">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+                    <p class="lead mb-5"><span>This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at&nbsp;</span><a href="https://unsplash.com/">Unsplash</a><span>!</span></p><a class="btn btn-dark btn-xl" role="button" href="#services">What We Offer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="callout" style="background:linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(&quot;assets/img/bg-callout.jpg&quot;);background-position:center center;background-repeat:no-repeat;background-size:cover;">
+        <div class="container text-center">
+            <h2 class="mx-auto mb-5"><span>Welcome to&nbsp;</span><em>your</em><span><br>next website!<br></span></h2><a class="btn btn-primary btn-xl" role="button" href="#">Download Now!</a>
+        </div>
+    </section>
+    <section id="portfolio" class="content-section">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">Portfolio</h3>
+                <h2 class="mb-5">Recent Projects</h2>
+            </div>
+            <div class="row g-0">
+                <div class="col-lg-6"><a class="portfolio-item" href="#">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h2>Stationary</h2>
+                                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                            </div>
+                        </div><img class="img-fluid" src="assets/img/portfolio-1.jpg">
+                    </a></div>
+                <div class="col-lg-6"><a class="portfolio-item" href="#">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h2>Ice Cream</h2>
+                                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                            </div>
+                        </div><img class="img-fluid" src="assets/img/portfolio-2.jpg">
+                    </a></div>
+                <div class="col-lg-6"><a class="portfolio-item" href="#">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h2>Strawberries</h2>
+                                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                            </div>
+                        </div><img class="img-fluid" src="assets/img/portfolio-3.jpg">
+                    </a></div>
+                <div class="col-lg-6"><a class="portfolio-item" href="#">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <h2>Workspace</h2>
+                                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                            </div>
+                        </div><img class="img-fluid" src="assets/img/portfolio-4.jpg">
+                    </a></div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center py-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <p class="text-muted my-2">Copyright&nbsp;© 2024 brcunha.pt</p>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <p class="text-muted my-2">Made with ❤️ and Bootstrap 5</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
 
-            function ProTip() {
-                return (
-                    <Typography sx={{ mt: 6, mb: 3, color: 'text.secondary' }}>
-                        <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-                        {'Pro tip: See more '}
-                        <Link href="https://mui.com/material-ui/getting-started/templates/">templates</Link>
-                        {' in the Material UI documentation.'}
-                    </Typography>
-                );
-            }
-
-            function Copyright() {
-                return (
-                    <Typography variant="body2" color="text.secondary" align="center">
-                        {'Copyright © '}
-                        <Link color="inherit" href="https://mui.com/">
-                            Your Website
-                        </Link>{' '}
-                        {new Date().getFullYear()}
-                        {'.'}
-                    </Typography>
-                );
-            }
-
-            function App() {
-                return (
-                    <Container maxWidth="sm">
-                        <Box sx={{ my: 4 }}>
-                            <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-                                Material UI CDN example
-                            </Typography>
-                            <ProTip />
-                            <Copyright />
-                        </Box>
-                    </Container>
-                );
-            }
-
-            const root = ReactDOM.createRoot(document.getElementById('root'));
-            root.render(
-                <ThemeProvider theme={theme}>
-                    {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-                    <CssBaseline />
-                    <App />
-                </ThemeProvider>,
-            );
-        </script>
-    </body>
 </html>
