@@ -1,0 +1,2 @@
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0}code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}@keyframes myAnim{0%,to{transform:rotate(0deg);transform-origin:50% 0}10%{transform:rotate(.5deg)}20%,40%,60%{transform:rotate(-1deg)}30%,50%,70%{transform:rotate(1deg)}80%{transform:rotate(-.5deg)}90%{transform:rotate(.5deg)}}
+/*# sourceMappingURL=main.fbefd53d.css.map*/
