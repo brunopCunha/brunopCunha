@@ -10,10 +10,12 @@ def create_thumbnails(image_folder, thumbnail_size=(512, 512)):
         file_path = os.path.join(image_folder, filename)
 
         if os.path.isfile(file_path) and filename.lower().endswith((".png", ".jpg", ".jpeg", ".bmp", ".gif")):
+            thumbnail_path = os.path.join(thumbnail_folder, filename)
+            if os.path.exists(thumbnail_path):
+                continue
             try:
                 with Image.open(file_path) as img:
                     img.thumbnail(thumbnail_size)
-                    thumbnail_path = os.path.join(thumbnail_folder, filename)
                     img.save(thumbnail_path)
                     print(f"Thumbnail created: {thumbnail_path}")
             except Exception as e:
